@@ -1,0 +1,96 @@
+  <!--- form layouts and breadcrumb taken from bootstrap --->
+
+
+  <nav aria-label = "breadcrumb">
+
+    <ol class="breadcrumb">
+      <li class= "breadcrumb-item"><a href="/">Home</a></li>
+      <li class = "breadcrumb-item active" aria-current ="page">Physio Details</li>
+    </ol>
+  </nav>
+<body>
+  <form class="row g-3 needs-validation"method="POST" action= "/addphysio" novalidate>
+<fieldset>
+<!-- Form Name -->
+<legend><b>Physio Details</b></legend>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">First Name</label>  
+  <div class="col-md-4">
+  <input id="floatingInput" name="FNAME" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Second Name</label>  
+  <div class="col-md-4">
+  <input id="" name="LNAME" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Mobile</label>  
+  <div class="col-md-4">
+  <input id="" name="MOBILE" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Email</label>  
+  <div class="col-md-4">
+  <input id="" name="EMAIL" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address Line 1">Address Line 1</label>  
+  <div class="col-md-4">
+  <input id="Address Line 1" name="ADDRESS1" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address Line 2">Address Line 2</label>  
+  <div class="col-md-4">
+  <input id="Address Line 2" name="ADDRESS2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">County </label>  
+  <div class="col-md-4">
+  <input id="" name="COUNTY" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Town">Town</label>  
+  <div class="col-md-4">
+  <input id="Town" name="TOWN" type="text" placeholder="" class="form-control input-md">
+  </div>
+</div>
+</fieldset>
+    <div class="form-group row">
+  <label for="example-date-input" class="col-2 col-form-label">Date Of Birth</label>
+  <div class="col-md-2">
+    <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="DOB">
+  </div>
+</div>
+
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</body>

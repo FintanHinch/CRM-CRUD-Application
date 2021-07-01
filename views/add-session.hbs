@@ -1,0 +1,79 @@
+  <!--- form layouts and breadcrumb taken from bootstrap --->
+
+
+  <nav aria-label = "breadcrumb">
+
+    <ol class="breadcrumb">
+      <li class= "breadcrumb-item"><a href="/">Home</a></li>
+      <li class = "breadcrumb-item active" aria-current ="page">Session Details</li>
+    </ol>
+  </nav>
+<body>
+  <form class="row g-3 needs-validation"method="POST" action= "/addsession" novalidate>
+<fieldset>
+<!-- Form Name -->
+<legend><b>Session Details</b></legend>
+
+<div class="form-group row">
+  <label for="example-date-input" class="col-2 col-form-label">Date Of Session</label>
+  <div class="col-md-2">
+    <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="DATE">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Client</label>  
+  <div class="col-md-4">
+  <input id="" name="CLIENT" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Physiotherapist</label>  
+  <div class="col-md-4">
+  <input id="" name="PHYSIO" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Fee</label>  
+  <div class="col-md-4">
+  <input id="" name="FEE" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address Line 1">Session Duration</label>  
+  <div class="col-md-4">
+  <input id="Address Line 1" name="DURATION" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address Line 2">Session Type</label>  
+  <div class="col-md-4">
+  <input id="Address Line 2" name="TYPE" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Session Notes</label>  
+  <div class="col-md-4">
+  <input id="" name="NOTES" type="textarea" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</body>

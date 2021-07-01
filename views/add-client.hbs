@@ -1,0 +1,125 @@
+ 
+ <!--- form layouts and breadcrumb taken from bootstrap --->
+ 
+ 
+ 
+  <nav aria-label = "breadcrumb">
+
+    <ol class="breadcrumb">
+      <li class= "breadcrumb-item"><a href="/">Home</a></li>
+      <li class = "breadcrumb-item active" aria-current ="page">New Client</li>
+    </ol>
+  </nav>
+<body>
+  <form class="row g-3 needs-validation"method="POST" action= "/addclient" novalidate>
+<fieldset>
+<!-- Form Name -->
+<legend><b>Client Details</b></legend>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">First Name</label>  
+  <div class="col-md-4">
+  <input id="floatingInput" name="FNAME" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Second Name</label>  
+  <div class="col-md-4">
+  <input id="" name="LNAME" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Mobile</label>  
+  <div class="col-md-4">
+  <input id="" name="MOBILE" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Email</label>  
+  <div class="col-md-4">
+  <input id="" name="EMAIL" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address Line 1">Address Line 1</label>  
+  <div class="col-md-4">
+  <input id="Address Line 1" name="ADDRESS1" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address Line 2">Address Line 2</label>  
+  <div class="col-md-4">
+  <input id="Address Line 2" name="ADDRESS2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">County </label>  
+  <div class="col-md-4">
+  <input id="" name="COUNTY" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Town">Town</label>  
+  <div class="col-md-4">
+  <input id="Town" name="TOWN" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Permission to send you a message</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+</fieldset>
+    <div class="form-group row">
+  <label for="example-date-input" class="col-2 col-form-label">Date Of Birth</label>
+  <div class="col-md-2">
+    <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="DOB">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="">Referred By</label>  
+  <div class="col-md-4">
+  <input id="" name="REFEREE" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</body>

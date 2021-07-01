@@ -1,0 +1,40 @@
+
+<h1><center>Client Details</center></h1>
+<a href="/addclient" type= "button" class = "btn btn-primary">Client Signup</a>
+<a href="/addphysio" type= "button" class = "btn btn-primary">Physio Signup</a>
+<a href="/addsession" type= "button" class = "btn btn-primary">Session Details</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.FNAME}}</td>
+      <td>{{this.LNAME}}</td>
+      <td>{{this.EMAIL}}</td>
+      <td>{{this.MOBILE}}</td>
+      <td class="text-end">
+        <a href="/{{this.id}}" type="button" class="btn btn-light btn-small"><i class=""></i> Delete</a>
+
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+
+<!--- https://getbootstrap.com/docs/4.0/content/tables/ --->
+
+
+
